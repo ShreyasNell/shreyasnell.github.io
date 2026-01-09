@@ -31,18 +31,18 @@ const readMoreLink = document.getElementById('read-more');
 const listItems = document.querySelectorAll('.collapsible-list li');
 
 
-document.getElementById("read-more").addEventListener("click", function(e) {
-    e.preventDefault(); // Prevent the default action of the link
-    var hiddenItems = document.querySelectorAll(".hidden");
+// document.getElementById("read-more").addEventListener("click", function(e) {
+//     e.preventDefault(); // Prevent the default action of the link
+//     var hiddenItems = document.querySelectorAll(".hidden");
     
-    // Check if any item is currently visible
-    var isExpanded = hiddenItems[0].style.display === "list-item";
+//     // Check if any item is currently visible
+//     var isExpanded = hiddenItems[0].style.display === "list-item";
     
-    // Toggle visibility of hidden items
-    hiddenItems.forEach(function(item) {
-        item.style.display = isExpanded ? "none" : "list-item";
-    });
+//     // Toggle visibility of hidden items
+//     hiddenItems.forEach(function(item) {
+//         item.style.display = isExpanded ? "none" : "list-item";
+//     });
 
-    // Change the text of the link after click
-    document.getElementById("read-more").textContent = isExpanded ? "Read More" : "Show Less";
-});
+//     // Change the text of the link after click
+//     document.getElementById("read-more").textContent = isExpanded ? "Read More" : "Show Less";
+// });
